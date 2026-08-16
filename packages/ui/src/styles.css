@@ -1,0 +1,55 @@
+.af-button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.af-button--primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.af-button--secondary {
+  background: transparent;
+  border-color: #94a3b8;
+  color: inherit;
+}
+
+.af-button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.af-loading-state,
+.af-empty-state,
+.af-error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.af-loading-state__spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  border-top-color: #2563eb;
+  animation: af-spin 0.8s linear infinite;
+}
+
+@keyframes af-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.af-error-state__message {
+  color: #b91c1c;
+}

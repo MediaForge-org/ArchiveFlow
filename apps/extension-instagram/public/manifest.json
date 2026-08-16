@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ArchiveFlow — Instagram Companion",
+  "version": "0.1.0",
+  "description": "Companion for the ArchiveFlow desktop app. Instagram is Source #1, not part of ArchiveFlow's core architecture.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": []
+}

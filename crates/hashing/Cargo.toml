@@ -1,0 +1,13 @@
+[package]
+name = "af-hashing"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "af_hashing"
+path = "src/lib.rs"
+
+[dependencies]
+sha2.workspace = true
+hex.workspace = true

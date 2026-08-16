@@ -1,0 +1,10 @@
+dist
+build
+target
+node_modules
+coverage
+src-tauri/target
+pnpm-lock.yaml
+
+# Documentation / UI reference prompt pack — not touched by this package.
+docs/

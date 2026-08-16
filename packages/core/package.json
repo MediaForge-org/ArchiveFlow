@@ -1,0 +1,24 @@
+{
+  "name": "@archiveflow/core",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Source-neutral domain model and source registry. Never imports from a concrete source.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@archiveflow/media-model": "workspace:*",
+    "@archiveflow/source-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

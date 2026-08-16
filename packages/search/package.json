@@ -1,0 +1,23 @@
+{
+  "name": "@archiveflow/search",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Source-neutral search index contract, with a pure in-memory reference implementation.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@archiveflow/media-model": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

@@ -1,0 +1,28 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+
+# Rust
+target/
+Cargo.lock.bak
+
+# Tauri
+apps/desktop/src-tauri/target/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# Logs
+*.log
+pnpm-debug.log*

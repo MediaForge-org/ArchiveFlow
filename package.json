@@ -1,0 +1,43 @@
+{
+  "name": "archiveflow",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ArchiveFlow — source-neutral social media archive manager (Instagram is Source #1, not the core).",
+  "type": "module",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "build": "pnpm -r --if-present run build",
+    "dev:desktop": "pnpm --filter @archiveflow/desktop run tauri dev",
+    "dev:extension-instagram": "pnpm --filter @archiveflow/extension-instagram run dev",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "test": "pnpm -r --if-present run test",
+    "rust:fmt": "cargo fmt --all",
+    "rust:fmt:check": "cargo fmt --all -- --check",
+    "rust:lint": "cargo clippy --workspace --all-targets -- -D warnings",
+    "rust:test": "cargo test --workspace",
+    "rust:build": "cargo build --workspace",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm rust:fmt:check && pnpm rust:lint && pnpm rust:test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/node": "^22.13.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0",
+    "vitest": "^3.0.5"
+  }
+}
