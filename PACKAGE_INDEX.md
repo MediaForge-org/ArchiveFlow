@@ -1,0 +1,86 @@
+# Package Index
+
+Gesamt: **80 Pakete**
+
+| Paket | Phase | Titel | Abhängigkeiten | UI | Datei |
+|---|---|---|---|---|---|
+| P001 | 00-foundation | Monorepo, Source-neutrale Toolchain und Projekt-Skelett | — | UI-093, UI-094 | `00-foundation/P001_monorepo-toolchain-und-projekt-skelett.md` |
+| P002 | 00-foundation | Source-neutrales Domänenmodell, Media Identity und gemeinsame Verträge | P001 | UI-095, UI-106, UI-107, UI-108, UI-110 | `00-foundation/P002_dom-nenmodell-und-gemeinsame-vertr-ge.md` |
+| P003 | 00-foundation | Desktop-App Shell und Design-System | P001, P002 | UI-001, UI-009 | `00-foundation/P003_desktop-app-shell-und-design-system.md` |
+| P004 | 00-foundation | Browser-Extension Shell (Manifest V3) | P001, P002 | UI-019, UI-020 | `00-foundation/P004_browser-extension-shell-manifest-v3.md` |
+| P005 | 00-foundation | Native Messaging / lokale IPC-Verbindung | P002, P003, P004 | UI-079, UI-078 | `00-foundation/P005_native-messaging-lokale-ipc-verbindung.md` |
+| P006 | 00-foundation | SQLite Schema, Repository Layer und Migrationen | P002, P003 | UI-106, UI-107, UI-108 | `00-foundation/P006_sqlite-schema-repository-layer-und-migrationen.md` |
+| P007 | 00-foundation | Einstellungen: Schema, Defaults und Persistenz | P003, P006 | UI-009, UI-036, UI-037, UI-038, UI-039, UI-040, UI-041 | `00-foundation/P007_einstellungen-schema-defaults-und-persistenz.md` |
+| P008 | 00-foundation | Logging, Telemetrie-freie Diagnostik und Fehlermodell | P002, P003, P006 | UI-032 | `00-foundation/P008_logging-telemetrie-freie-diagnostik-und-fehlermodell.md` |
+| P009 | 00-foundation | Test-Fundament, Source Contract Tests und Instagram-Fixtures | P001, P002, P004 | UI-095, UI-104 | `00-foundation/P009_test-fundament-und-instagram-fixtures.md` |
+| P010 | 00-foundation | CI, Quality Gates und Build-Artefakte | P001, P003, P004, P009 | — | `00-foundation/P010_ci-quality-gates-und-build-artefakte.md` |
+| P011 | 01-instagram-adapter | Session- und Account-Erkennung | P004, P005, P009 | UI-078 | `01-instagram-adapter/P011_session-und-account-erkennung.md` |
+| P012 | 01-instagram-adapter | Einzelner Bild-Post: Discovery und Download | P011 | UI-019 | `01-instagram-adapter/P012_einzelner-bild-post-discovery-und-download.md` |
+| P013 | 01-instagram-adapter | Video-Posts und Reels | P011, P012 | UI-005, UI-019 | `01-instagram-adapter/P013_video-posts-und-reels.md` |
+| P014 | 01-instagram-adapter | Carousel/Slideshow Datenmodell und Auswahl | P011, P012, P013 | UI-006, UI-021 | `01-instagram-adapter/P014_carousel-slideshow-datenmodell-und-auswahl.md` |
+| P015 | 01-instagram-adapter | Stories: einzelne und aktuell verfügbare Stories | P011, P012, P013 | UI-016, UI-081 | `01-instagram-adapter/P015_stories-einzelne-und-aktuell-verf-gbare-stories.md` |
+| P016 | 01-instagram-adapter | Highlights | P011, P014, P015 | UI-017 | `01-instagram-adapter/P016_highlights.md` |
+| P017 | 01-instagram-adapter | Gespeicherte Beiträge und Instagram-Collections | P011, P014 | UI-018 | `01-instagram-adapter/P017_gespeicherte-beitr-ge-und-instagram-collections.md` |
+| P018 | 01-instagram-adapter | Profil-Scanner und Pagination | P011, P012, P013, P014 | UI-020 | `01-instagram-adapter/P018_profil-scanner-und-pagination.md` |
+| P019 | 01-instagram-adapter | Following-Liste erfassen und auswählen | P011, P018 | UI-008 | `01-instagram-adapter/P019_following-liste-erfassen-und-ausw-hlen.md` |
+| P020 | 01-instagram-adapter | Quality Candidate Resolver | P012, P013, P014, P015 | UI-022 | `01-instagram-adapter/P020_quality-candidate-resolver.md` |
+| P021 | 01-instagram-adapter | Metadatenextraktion und Sidecar-Grundlage | P012, P013, P014, P015, P016, P017 | UI-040 | `01-instagram-adapter/P021_metadatenextraktion-und-sidecar-grundlage.md` |
+| P022 | 01-instagram-adapter | Dateinamen- und Ordner-Template Engine | P007, P021 | UI-041 | `01-instagram-adapter/P022_dateinamen-und-ordner-template-engine.md` |
+| P023 | 01-instagram-adapter | Robuster Datei-Writer, `.part` und atomare Finalisierung | P012, P013, P022 | UI-088 | `01-instagram-adapter/P023_robuster-datei-writer-part-und-atomare-finalisierung.md` |
+| P024 | 01-instagram-adapter | Dateiverifikation, Hashing und Media Probe | P020, P023 | UI-022, UI-073 | `01-instagram-adapter/P024_dateiverifikation-hashing-und-media-probe.md` |
+| P025 | 02-planner-queue | Schnellscan: Medienanzahl und grobe Downloadplanung | P018, P019 | UI-007, UI-091 | `02-planner-queue/P025_schnellscan-medienanzahl-und-grobe-downloadplanung.md` |
+| P026 | 02-planner-queue | Vollanalyse und Speichergrößen-Ermittlung | P020, P025 | UI-007, UI-091 | `02-planner-queue/P026_vollanalyse-und-speichergr-en-ermittlung.md` |
+| P027 | 02-planner-queue | Download Planner UI | P025, P026, P003 | UI-007 | `02-planner-queue/P027_download-planner-ui.md` |
+| P028 | 02-planner-queue | Persistente Task Engine und Download Queue | P006, P023, P027 | UI-011, UI-100, UI-101 | `02-planner-queue/P028_persistente-download-queue.md` |
+| P029 | 02-planner-queue | Worker Scheduler, Pause, Resume und Stop | P028 | UI-012 | `02-planner-queue/P029_worker-scheduler-pause-resume-und-stop.md` |
+| P030 | 02-planner-queue | Retry, Backoff, Rate-Limit und Cooldown | P028, P029, P008 | UI-013, UI-085 | `02-planner-queue/P030_retry-backoff-rate-limit-und-cooldown.md` |
+| P031 | 02-planner-queue | Crash-Recovery und Neustart-Wiederaufnahme | P028, P029, P023 | UI-087 | `02-planner-queue/P031_crash-recovery-und-neustart-wiederaufnahme.md` |
+| P032 | 02-planner-queue | Prioritäten und Drag & Drop in Queue | P028, P029 | UI-089 | `02-planner-queue/P032_priorit-ten-und-drag-drop-in-queue.md` |
+| P033 | 02-planner-queue | Download- und Sync-Historie | P028, P006 | UI-031 | `02-planner-queue/P033_download-und-sync-historie.md` |
+| P034 | 03-bulk-sync | Komplettes Profil herunterladen | P018, P020, P022, P024, P028 | UI-020 | `03-bulk-sync/P034_komplettes-profil-herunterladen.md` |
+| P035 | 03-bulk-sync | Alle ausgewählten Followings archivieren | P019, P025, P026, P028, P034 | UI-008, UI-007 | `03-bulk-sync/P035_alle-ausgew-hlten-followings-archivieren.md` |
+| P036 | 03-bulk-sync | Inkrementelle Synchronisierung: nur Neues | P018, P034, P035, P006 | UI-014 | `03-bulk-sync/P036_inkrementelle-synchronisierung-nur-neues.md` |
+| P037 | 03-bulk-sync | Sync Preview und Dry Run | P036, P027 | UI-014, UI-090 | `03-bulk-sync/P037_sync-preview-und-dry-run.md` |
+| P038 | 03-bulk-sync | Account-Identität und Username-Historie | P011, P018, P019, P006 | UI-076, UI-015 | `03-bulk-sync/P038_account-identit-t-und-username-historie.md` |
+| P039 | 03-bulk-sync | Archivmodus und remote gelöschte Medien | P036, P037 | UI-025 | `03-bulk-sync/P039_archivmodus-und-remote-gel-schte-medien.md` |
+| P040 | 04-library-explorer | Medienindex und Thumbnail-Cache | P006, P021, P024 | UI-002 | `04-library-explorer/P040_medienindex-und-thumbnail-cache.md` |
+| P041 | 04-library-explorer | Explorer Grid- und Listenansicht | P040, P003 | UI-002, UI-003 | `04-library-explorer/P041_explorer-grid-und-listenansicht.md` |
+| P042 | 04-library-explorer | Bild- und Video-Viewer | P041, P024 | UI-004, UI-005, UI-052 | `04-library-explorer/P042_bild-und-video-viewer.md` |
+| P043 | 04-library-explorer | Carousel/Slideshow Viewer | P014, P041, P042 | UI-006 | `04-library-explorer/P043_carousel-slideshow-viewer.md` |
+| P044 | 04-library-explorer | Globale Suche, Filter, Sortierung und Gruppierung | P041, P006 | UI-028, UI-029 | `04-library-explorer/P044_globale-suche-filter-sortierung-und-gruppierung.md` |
+| P045 | 04-library-explorer | Account-Detailseite | P038, P040, P041 | UI-015 | `04-library-explorer/P045_account-detailseite.md` |
+| P046 | 04-library-explorer | Stories- und Highlights-Browser | P015, P016, P040, P041 | UI-016, UI-017 | `04-library-explorer/P046_stories-und-highlights-browser.md` |
+| P047 | 04-library-explorer | Gespeichert, Favoriten und lokale Collections | P017, P041 | UI-018, UI-026, UI-027 | `04-library-explorer/P047_gespeichert-favoriten-und-lokale-collections.md` |
+| P048 | 04-library-explorer | Duplikaterkennung und Zusammenführen | P024, P040 | UI-023, UI-051, UI-053 | `04-library-explorer/P048_duplikaterkennung-und-zusammenf-hren.md` |
+| P049 | 04-library-explorer | Fehlende Dateien, Reindex und Reparatur | P024, P040, P048 | UI-024, UI-034, UI-067 | `04-library-explorer/P049_fehlende-dateien-reindex-und-reparatur.md` |
+| P050 | 05-storage-settings | Speicherplatzschutz und Storage Health | P007, P024, P049 | UI-035, UI-042, UI-072 | `05-storage-settings/P050_speicherplatzschutz-und-storage-health.md` |
+| P051 | 05-storage-settings | Multi-Drive Regeln und Archiv-Migration | P050, P022, P049 | UI-010, UI-043, UI-070, UI-071 | `05-storage-settings/P051_multi-drive-regeln-und-archiv-migration.md` |
+| P052 | 05-storage-settings | Backup, Restore, Export und Archiv-Rekonstruktion | P006, P007, P021, P049 | UI-033, UI-068, UI-069, UI-092 | `05-storage-settings/P052_backup-restore-export-und-archiv-rekonstruktion.md` |
+| P053 | 05-storage-settings | Account-spezifische Einstellungen und Presets | P007, P045 | UI-036, UI-037 | `05-storage-settings/P053_account-spezifische-einstellungen-und-presets.md` |
+| P054 | 05-storage-settings | Bandbreite, Parallelität und Benachrichtigungen | P029, P030, P007 | UI-038, UI-039 | `05-storage-settings/P054_bandbreite-parallelit-t-und-benachrichtigungen.md` |
+| P055 | 06-advanced-v1x | Kalender, Timeline und Statistik-Dashboard | P040, P044, P033 | UI-030, UI-050 | `06-advanced-v1x/P055_kalender-timeline-und-statistik-dashboard.md` |
+| P056 | 06-advanced-v1x | Smart Collections, Tags und Bewertungen | P044, P047 | UI-045, UI-063, UI-064 | `06-advanced-v1x/P056_smart-collections-tags-und-bewertungen.md` |
+| P057 | 06-advanced-v1x | Watch Folders, mehrere Archive und Archivvergleich | P040, P049, P051 | UI-044, UI-065, UI-066 | `06-advanced-v1x/P057_watch-folders-mehrere-archive-und-archivvergleich.md` |
+| P058 | 06-advanced-v1x | Geplante automatische Synchronisierung | P036, P053, P054 | UI-061, UI-062 | `06-advanced-v1x/P058_geplante-automatische-synchronisierung.md` |
+| P059 | 06-advanced-v1x | Erweiterte Medienanalyse und Thumbnail-Cache-Verwaltung | P024, P040 | UI-074, UI-075 | `06-advanced-v1x/P059_erweiterte-medienanalyse-und-thumbnail-cache-verwaltung.md` |
+| P060 | 06-advanced-v1x | Source SDK, Adapter Registry, Capability UI und Importer | P002, P008, P040, P057 | UI-060, UI-093, UI-094, UI-095, UI-104, UI-115 | `06-advanced-v1x/P060_erweiterbare-source-adapter-architektur-und-import-externer-archive.md` |
+| P061 | 07-extension-release | In-Instagram Download Controls für Post, Reel, Story und Profil | P012, P013, P014, P015, P034, P005 | UI-019, UI-020, UI-081, UI-082, UI-083 | `07-extension-release/P061_in-instagram-download-controls-f-r-post-reel-story-und-profil.md` |
+| P062 | 07-extension-release | Extension ↔ Desktop Status, Toasts und Fehler-UX | P005, P030, P031, P061 | UI-084, UI-086 | `07-extension-release/P062_extension-desktop-status-toasts-und-fehler-ux.md` |
+| P063 | 07-extension-release | Onboarding, Empty States und kritische Dialoge | P003, P005, P007, P050 | UI-054 | `07-extension-release/P063_onboarding-empty-states-und-kritische-dialoge.md` |
+| P064 | 07-extension-release | Performance- und Lasttests für große Archive | P028, P040, P041, P055 | — | `07-extension-release/P064_performance-und-lasttests-f-r-gro-e-archive.md` |
+| P065 | 07-extension-release | Security- und Privacy-Hardening | P005, P007, P008, P011, P052, P061 | — | `07-extension-release/P065_security-und-privacy-hardening.md` |
+| P066 | 07-extension-release | Packaging, Updates und plattformübergreifende Builds | P010, P063, P065 | UI-055 | `07-extension-release/P066_packaging-updates-und-plattform-bergreifende-builds.md` |
+| P067 | 07-extension-release | v1.0 Release Gate und End-to-End Abnahme | P001, P010, P024, P027, P031, P035, P037, P041, P050, P061, P065, P066 | — | `07-extension-release/P067_v1-0-release-gate-und-end-to-end-abnahme.md` |
+| P068 | 08-roadmap | v1.x Roadmap-Integration und technische Schulden | P055, P056, P057, P058, P059, P060, P067 | — | `08-roadmap/P068_v1-x-roadmap-integration-und-technische-schulden.md` |
+| P069 | 08-roadmap | Geo-/EXIF-Kartenansicht als optionales lokales Feature | P055, P059 | UI-047 | `08-roadmap/P069_geo-exif-kartenansicht-als-optionales-lokales-feature.md` |
+| P070 | 08-roadmap | Organisation Rules Engine | P056, P060 | UI-059 | `08-roadmap/P070_organisation-rules-engine.md` |
+| P071 | 09-multisource-roadmap | Cross-Source Deduplizierung und PhysicalBlob Sharing | P024, P048, P060 | UI-105, UI-106 | `09-multisource-roadmap/P071_cross-source-deduplizierung-und-physicalblob-sharing.md` |
+| P072 | 09-multisource-roadmap | ArchiveIdentity und plattformübergreifender Content Graph | P038, P060, P071 | UI-096, UI-110 | `09-multisource-roadmap/P072_archiveidentity-und-plattformuebergreifender-content-graph.md` |
+| P073 | 09-multisource-roadmap | Source Manager, Adapter Health und Capability Inspector | P060, P008 | UI-094, UI-095, UI-104, UI-122 | `09-multisource-roadmap/P073_source-manager-adapter-health-und-capability-inspector.md` |
+| P074 | 09-multisource-roadmap | Portables ArchiveFlow Format sowie Import und Export | P052, P060 | UI-115, UI-116 | `09-multisource-roadmap/P074_portables-archiveflow-format-sowie-import-und-export.md` |
+| P075 | 09-multisource-roadmap | Source Worker Isolation und Adapter Sandbox Vorbereitung | P005, P060, P065 | UI-093, UI-104 | `09-multisource-roadmap/P075_source-worker-isolation-und-adapter-sandbox-vorbereitung.md` |
+| P076 | 09-multisource-roadmap | Command Palette und Saved Views | P044, P056, P060 | UI-119, UI-120 | `09-multisource-roadmap/P076_command-palette-und-saved-views.md` |
+| P077 | 09-multisource-roadmap | Audit Log und Provenance Browser | P008, P033, P060 | UI-107, UI-121 | `09-multisource-roadmap/P077_audit-log-und-provenance-browser.md` |
+| P078 | 09-multisource-roadmap | Source-neutraler Suchindex und Unified Library | P044, P060, P072 | UI-097, UI-098 | `09-multisource-roadmap/P078_source-neutraler-suchindex-und-unified-library.md` |
+| P079 | 09-multisource-roadmap | Feature Flags und capability-basierte UI Slots | P003, P060, P073 | UI-095, UI-096 | `09-multisource-roadmap/P079_feature-flags-und-capability-basierte-ui-slots.md` |
+| P080 | 09-multisource-roadmap | Second-Source Conformance Proof ohne Core-Umschreibung | P071, P072, P073, P075, P078, P079 | UI-093, UI-094, UI-095, UI-097, UI-100 | `09-multisource-roadmap/P080_second-source-conformance-proof-ohne-core-umschreibung.md` |

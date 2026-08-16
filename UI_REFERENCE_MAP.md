@@ -1,0 +1,131 @@
+# ArchiveFlow UI Reference Map
+
+Die bisherigen Mockups wurden im Chat als fortlaufende UI-Referenzen konzipiert. Die Prompt-Dateien verwenden diese IDs als **Designreferenz**, nicht als technische Quelle.
+
+- UI-001 Dashboard / Übersicht
+- UI-002 Medien-Explorer Grid
+- UI-003 Medien-Explorer Liste
+- UI-004 Bild-Viewer
+- UI-005 Video-Viewer
+- UI-006 Carousel / Slideshow Viewer
+- UI-007 Download Planner
+- UI-008 Following-Auswahl
+- UI-009 Einstellungen
+- UI-010 Storage / Multi-Drive Manager
+- UI-011 Download Queue
+- UI-012 Pause / Resume
+- UI-013 Fehler & Retry
+- UI-014 Sync Preview
+- UI-015 Account Detail
+- UI-016 Stories
+- UI-017 Highlights
+- UI-018 Gespeicherte Beiträge
+- UI-019 Einzel-Download direkt in Instagram
+- UI-020 Profil-Download direkt in Instagram
+- UI-021 Carousel-Auswahl
+- UI-022 Quality Inspector
+- UI-023 Duplikate
+- UI-024 Fehlende Dateien
+- UI-025 Remote-gelöschte Medien
+- UI-026 Collections
+- UI-027 Favoriten
+- UI-028 Globale Suche
+- UI-029 Erweiterte Filter
+- UI-030 Kalenderansicht
+- UI-031 Download-Historie
+- UI-032 Diagnoseexport
+- UI-033 Backup & Restore
+- UI-034 Archiv neu indizieren
+- UI-035 Speicherplatzwarnung
+- UI-036 Account-spezifische Einstellungen
+- UI-037 Presets
+- UI-038 Bandbreite & Parallelität
+- UI-039 Benachrichtigungen
+- UI-040 Metadaten & Sidecars
+- UI-041 Dateinamen & Ordnereditor
+- UI-042 Storage Health
+- UI-043 Archiv-Migration
+- UI-044 Mehrere Archive
+- UI-045 Smart Collections
+- UI-050 Statistik-Dashboard
+- UI-051 Duplikate zusammenführen
+- UI-052 Media Viewer Vollbild
+- UI-053 Side-by-Side Vergleich
+- UI-054 Offline-Modus Hinweis / Empty-State-Sprache
+- UI-055 Update-Verfügbarkeit
+- UI-059 Organisations-Regeln
+- UI-060 Import / externe Quellen
+- UI-061 Automatische Synchronisierung
+- UI-062 Sync-Zeitplan
+- UI-063 Smart Collection Regel-Editor
+- UI-064 Tags & Bewertungen
+- UI-065 Watch Folders
+- UI-066 Archivvergleich
+- UI-067 Archiv-Reparatur-Assistent
+- UI-068 Backup-Versionen
+- UI-069 Restore-Assistent
+- UI-070 Storage-Regel-Editor
+- UI-071 Archiv-Migration Fortschritt
+- UI-072 Storage Health Detail
+- UI-073 Integritätsprüfung / Hash-Scan
+- UI-074 Erweiterte Videoanalyse
+- UI-075 Thumbnail-Cache
+- UI-076 Account-Umbenennung erkannt
+- UI-078 Extension Login-/Session-Status
+- UI-079 Extension ↔ Desktop-Verbindung
+- UI-081 Instagram Story Einzel-Download
+- UI-082 Instagram Reel Download
+- UI-083 Carousel Einzel-Slide-Auswahl
+- UI-084 Download-Status in Extension
+- UI-085 Rate-Limit / Cooldown
+- UI-086 Offline / Verbindungs-Recovery
+- UI-087 Absturz-Recovery
+- UI-088 Unvollständige Downloads (.part)
+- UI-089 Queue-Priorität per Drag & Drop
+- UI-090 Dry-Run Ergebnis
+- UI-091 Schnellscan vs Vollanalyse
+- UI-092 Sidecars neu aufbauen
+
+Wenn du später die Mockups als einzelne Dateien exportierst, verwende exakt diese IDs als Dateinamen-Präfix, z. B. `UI-022_quality-inspector.png`.
+
+
+## Neue Multi-Source-/Core-UI-Referenzen
+
+- UI-093 Source Architecture Overview
+- UI-094 Source Manager
+- UI-095 Adapter Capabilities
+- UI-096 Account Overview (Multi-Source)
+- UI-097 Library — All Sources
+- UI-098 Library — Source Filter
+- UI-099 Discovery vs. Acquisition
+- UI-100 Task Engine Dashboard
+- UI-101 Task Dependency Graph
+- UI-102 Scheduler / Zeitplan
+- UI-103 Source Rate Limit / Cooldown
+- UI-104 Adapter Health
+- UI-105 Cross-Source Deduplication
+- UI-106 Media Identity Model
+- UI-107 Provenance / Herkunft
+- UI-108 Media Probe
+- UI-109 Thumbnail Service / Preview Cache
+- UI-110 Content Graph / Beziehungen
+- UI-111 Storage Manager (source-neutral)
+- UI-112 Storage Rule Editor
+- UI-113 Backup Manager
+- UI-114 Restore Assistant
+- UI-115 Import Manager
+- UI-116 Export Manager
+- UI-117 Settings — General
+- UI-118 Notifications
+- UI-119 Command Palette
+- UI-120 Saved Views
+- UI-121 Audit Log
+- UI-122 Health Dashboard
+- UI-123 First Run Onboarding
+- UI-124 Setup — Download Folder
+- UI-125 Setup — Browser Extension
+- UI-126 Extension Dashboard
+- UI-127 Extension Downloads
+- UI-128 Extension Settings
+
+Die Einzeldateien befinden sich in `UI_Mockups/02_multisource_architecture/` und tragen exakt die jeweilige UI-ID im Dateinamen.
